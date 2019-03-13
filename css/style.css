@@ -1,0 +1,176 @@
+/* Navigation Bar */
+/* * {
+  outline: dotted black 1px;
+} */
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px
+}
+nav .navbar{
+  position: fixed;
+/*   border: solid 1px green; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav a{
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #788878;
+}
+
+nav a:hover{
+  color: green;
+}
+
+/* Main body */
+
+body {
+  font-family: "weblysleek_uilight",sans-serif;
+   background-color: lightgray;
+}
+
+section{
+/*   border: dotted 1px gray;  */
+  margin-left: 10px;
+/*   height: 600px; */
+ 
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh
+ }
+
+.sectionWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: space-between;
+}
+
+div img{
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+/*   border: solid 1px;
+  padding: 3px */
+}
+
+#secRight{
+  display: flex;
+  flex-flow: column;
+/*   border: solid 1px;
+  padding: 3px */
+}
+
+#whoareyou{
+  
+}
+
+.sociallinks{
+  
+  display: flex;
+  justify-content: flex-start;
+/*   width: 158px */
+  
+}
+.sociallinks a{
+  text-decoration: none;
+  color: gray;
+}
+.sociallinks a:hover{
+  color: black;
+}
+
+.lpad{
+  padding: 10px
+}
+
+.vl{
+  
+}
+
+
+#tech{
+  
+}
+
+#blog{
+  height: 100vh;
+}
+
+footer{
+  background-color: #788878;
+  color: white;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+/* Tooltip */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      div img{
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    /*   border: solid 1px;
+      padding: 3px */
+    }
+      .sectionWrapper{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100px;
+      justify-content: center;
+    }
+      nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-size: 20px
+    }
+}
